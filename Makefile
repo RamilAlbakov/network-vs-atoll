@@ -5,10 +5,10 @@ test:
 	poetry run pytest
 
 test-coverage:
-	poetry run pytest --cov=netwotk_vs_atoll --cov-report xml
+	poetry run pytest --cov=network_vs_atoll --cov-report xml
 
 lint:
-	poetry run flake8 netwotk_vs_atoll
+	poetry run flake8 network_vs_atoll
 
 selfcheck:
 	poetry check
@@ -19,6 +19,6 @@ build: check
 	poetry build
 
 isort:
-	poetry run isort netwotk_vs_atoll
+	poetry run isort network_vs_atoll
 
 .PHONY: install test lint selfcheck check build
