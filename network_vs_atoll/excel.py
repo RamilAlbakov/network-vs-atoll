@@ -15,12 +15,20 @@ def fill_sheet(sheet, missed_cells):
 
     row = 1
     for col in columns:
-        sheet.cell(row=row, column=columns.index(col) + 1, value=col)
+        sheet.cell(
+            row=row,
+            column=columns.index(col) + 1,
+            value=col,
+        )
 
     row = 2
     for missed_cell in missed_cells:
         for cell_val in missed_cell:
-            sheet.cell(row=row, column=missed_cell.index(cell_val) + 1, value=cell_val)
+            sheet.cell(
+                row=row,
+                column=missed_cell.index(cell_val) + 1,
+                value=cell_val,
+            )
         row += 1
 
 
