@@ -4,9 +4,6 @@ import os
 from collections import namedtuple
 
 import cx_Oracle
-from dotenv import load_dotenv
-
-load_dotenv('.env')
 
 gsm_select = """
     SELECT
