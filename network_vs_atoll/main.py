@@ -1,12 +1,9 @@
 """Get cells configured in the network, but missing in atoll and send report."""
 
-from dotenv import load_dotenv
 from network_vs_atoll.excel import fill_excel
 from network_vs_atoll.report import make_report
 from network_vs_atoll.select_data import select_cells
 from network_vs_atoll.send_mail import send_email
-
-load_dotenv('.env')
 
 
 def main():

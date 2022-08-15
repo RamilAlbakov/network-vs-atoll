@@ -16,6 +16,9 @@ pytest = "^7.1.2"
 pytest-cov = "^3.0.0"
 ipython = "^8.4.0"
 
+[tool.poetry.scripts]
+main = "network_vs_atoll.scripts.main:main_script"
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
