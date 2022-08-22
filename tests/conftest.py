@@ -23,8 +23,8 @@ def selected_data():
             GsmCells('bee', 'bsc2', 'site2', 'cell2'),
         ],
         'lte': [
-            LteCells('subnet1', 'lsite1', 'lcell1'),
-            LteCells('subnet2', 'lsite2', 'lcell2'),
-            LteCells('subnet3', 'lsite3', 'lcell3'),
+            LteCells('subnet1', 'lsite1', 'L2100cell'),
+            LteCells('subnet2', 'ERBS_555', 'L1800'),
+            LteCells('subnet3', 'ERBS_777', 'cell3'),
         ],
     }
