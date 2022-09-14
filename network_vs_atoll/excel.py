@@ -11,6 +11,8 @@ def fill_sheet(sheet, missed_cells):
         sheet: openpyxl sheet object
         missed_cells: list
     """
+    if not missed_cells:
+        return
     columns = missed_cells[0]._fields
 
     row = 1
